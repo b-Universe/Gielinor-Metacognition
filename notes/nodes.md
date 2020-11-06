@@ -36,9 +36,21 @@
 
 | Flag Name | Target | Object Type | Description |
 | :-------- | :----: | :---------: | :---------- |
-| gielinor.skills.<[skill]>.level                  | Player | Element(Int) | Returns the level in the given `<[Skill]>` skill |
-| gielinor.skills.<[skill]>.experience             | Player | Element(Int) | Returns the experience in the given `<[Skill]>` skill |
-| gielinor.skills.<[skill]>.experience_requirement | Player | Element(Int) | Returns the experience required in the given `<[Skill]>` skill to the next level |
+| gielinor.skills.<[skill]>.level                         | Player | ElementTag(Int) | Returns the level in the given `<[Skill]>` skill |
+| gielinor.skills.<[skill]>.experience                    | Player | ElementTag(Int) | Returns the experience in the given `<[Skill]>` skill |
+| gielinor.skills.<[skill]>.experience_requirement        | Player | ElementTag(Int) | Returns the experience required in the given `<[Skill]>` skill to the next level |
+| behr.essentials.behredit.selection                      | Player | CuboidTag       | Returns the selection the player has selected |
+| behr.essentials.behredit.selection_mode                 | Player | ElementTag      | Returns the selection mode for the player's BehrEdit Wand
+| behr.essentials.behredit.pos1                           | Player | LocationTag     | Returns the left position selection |
+| behr.essentials.behredit.pos2                           | Player | LocationTag     | Returns the right position selection |
+| behr.essentials.behredit.posc                           | Player | LocationTag     | Returns the center (f) position selection |
+| behr.essentials.behredit.monitor                        | Player | Boolean         | Returns `true` if the player is currently monitoring their BehrEdit Clipboard outline. |
+| behr.message_rate_limit.behredit.clear_selection        | Player | Boolean         | Returns `true` if the player has received an initial prompt for clearing the BehrEdit Clipboard. |
+| behr.message_rate_limit.behredit.clear_selection_repeat | Player | Boolean         | Returns `true` if the player has been told nothing interesting happens clearing an empty clipboard |
+| behr.message_rate_limit.behredit.tree_hard_reset        | Player | Boolean         | Returns `true` if the player has been warned prior to a hard reset of the tree repository |
+| behr.essentials.behredit.plant_mode                     | Player | Boolean         | Returns `true` if the player has enabled tree planting mode and is actively placing trees |
+| behr.essentials.behredit.tree_plant_selection           | Player | ElementTag      | Returns the tree group that the player is actively placing in tree plant mode |
+| behr.essentials.behredit.tree_plan_index                | Player | ElementTag(Int) | Returns the tree group index that the player is actively placing in tree plant mode |
 
 ### Commands
 
