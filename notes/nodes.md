@@ -30,9 +30,20 @@
 | behr.essentials.location             | /location    | Allows the player to teleport to the notable locations saved |
 | behr.essentials.reload               | /reload      | Allows the player to reload the scripts on the server |
 
-## Flags
+## Flags & Yaml
 
-### Global
+### Yaml Files
+
+Yaml files can be found [`[here]`](https://github.com/bGielinor/Gielinor-Development/tree/master/data/repo-link).
+
+| Yaml Name | Directory | Description |
+| :-------- | :-------: | :---------- |
+| equipment       | data/repo-link/equipment.yml       | Container for all worn equipments and their properties |
+| items           | data/repo-link/items.yml           | Container for all non-worn items and their properties |
+| tree_repository | data/repo-link/tree_repository.yml | Container for tree schematic directories |
+| castle_wars     | data/minigames/castle_wars.yml     | Container for Castle Wars notable objects and data |
+
+### Global Flags
 
 | Flag Name | Target | Object Type | Description |
 | :-------- | :----: | :---------: | :---------- |
