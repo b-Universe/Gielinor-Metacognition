@@ -97,6 +97,7 @@ Yaml files can be found [`[here]`](https://github.com/bGielinor/Gielinor-Develop
 | gielinor.minigames.castle_wars.in_queue                             | Player | Boolean            | Returns `true` if the player is in the castle wars queue |
 | gielinor.minigames.castle_wars.death_screen                         | Player | Boolean            | Returns `true` if the player has died and is on the death screen |
 | gielinor.minigames.castle_wars.bandage_cooldown                     | Player | Boolean            | Returns `true` if the player has a bandage usage cooldown active |
+| gielinor.minigames.castle_wars.potion_cooldown                      | Player | Boolean            | Returns `true` if the player has an explosive potion usage cooldown active |
 | gielinor.minigames.castle_wars.barricade_cooldown                   | Player | Boolean            | Returns `true` if the player has a barricade usage cooldown active |
 | gielinor.minigames.castle_wars.respawn_door_cooldown                | Player | Boolean            | Ratelimit for attempting to use the respawn room doors too quickly
 | gielinor.minigames.castle_wars.team.red                             | Player | ElementTag         | Returns `true` if the player is on the `red` team `(*this is old usage and should be converted to a single flag*)` |
@@ -114,4 +115,6 @@ Yaml files can be found [`[here]`](https://github.com/bGielinor/Gielinor-Develop
 | gielinor.minigames.castle_wars.waiting_box                          | Server | ElementTag         | Returns the queue waiting bossbar font box
 | gielinor.minigames.castle_wars.barricade_damage_cooldown.<[entity]> | Server | Boolean            | Returns `true` if the barricade entity has a damage cooldown |
 | gielinor.minigames.castle_wars.barricade_health_display.<[entity]>  | Server | Boolean            | Returns `true` if the barricade entity has a healthbar active |
+| gielinor.minigames.castle_wars.rockfall.<[team]>.<[axis]>.fallen    | Server | Boolean            | Returns `true` if the rockfall at this location has fallen |
+| gielinor.minigames.castle_wars.rockfall.<[team]>.<[axis]>.health    | Server | ElementTag         | Returns the health of the rockfall at this location |
 | gielinor.play_effects.castle_wars.hub                               | Server | Boolean            | Returns `true` if players are within proximity to activate portal particle effects for the castle wars hub |
