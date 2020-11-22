@@ -93,6 +93,9 @@ Yaml files can be found [`[here]`](https://github.com/bGielinor/Gielinor-Develop
 | gielinor.message_rate_limit.castle_wars_wrong_respawn_door          | Player | Boolean            | Ratelimit for message sent when attempting to enter the wrong team respawn room |
 | gielinor.message_rate_limit.castle_wars_respawn_door_with_flag      | Player | Boolean            | Ratelimit for message sent when attempting to enter the respawn room carrying the flag |
 | gielinor.message_rate_limit.castle_wars_respawn_door                | Player | Boolean            | Ratelimit for message sent when attempting to use the respawn room doors too quickly |
+| gielinor.message_rate_limit.castle_wars_respawn_door                | Player | Boolean            | Ratelimit for message sent when attempting to use the respawn room doors too quickly |
+| gielinor.message_rate_limit.castle_wars_barricade_in_respawn        | Player | Boolean            | Ratelimit for message sent when attempting to place a barricade in the respawn room |
+| gielinor.message_rate_limit.castle_wars_maximum_barricades_set      | Player | Boolean            | Ratelimit for message sent when attempting to place more barricades than the team's allowed barricades |
 | gielinor.minigames.castle_wars.in_queue                             | Server | Boolean            | Returns `true` if Castle Wars has an active queue in process |
 | gielinor.minigames.castle_wars.in_queue                             | Player | Boolean            | Returns `true` if the player is in the castle wars queue |
 | gielinor.minigames.castle_wars.death_screen                         | Player | Boolean            | Returns `true` if the player has died and is on the death screen |
@@ -103,6 +106,7 @@ Yaml files can be found [`[here]`](https://github.com/bGielinor/Gielinor-Develop
 | gielinor.minigames.castle_wars.team.red                             | Player | ElementTag         | Returns `true` if the player is on the `red` team `(*this is old usage and should be converted to a single flag*)` |
 | gielinor.minigames.castle_wars.team.blue                            | Player | ElementTag         | Returns `true` if the player is on the `blue` team `(*this is old usage and should be converted to a single flag*)` |
 | gielinor.minigames.castle_wars.flag_carrier                         | Player | Boolean            | Returns `true` if the player is carrying the opposing team's flag |
+| gielinor.minigames.castle_wars.in_game                              | Server | Boolean            | Returns `true` if the player is in an active Castle Wars game |
 | gielinor.minigames.castle_wars.flag_captured.red                    | Server | Boolean            | Returns `true` if the `red` team's flag has been captured |
 | gielinor.minigames.castle_wars.flag_captured.blue                   | Server | Boolean            | Returns `true` if the `blue` team's flag has been captured |
 | gielinor.minigames.castle_wars.start_time                           | Server | DurationTag        | Returns the duration that the queue has until the next game starts |
@@ -118,3 +122,8 @@ Yaml files can be found [`[here]`](https://github.com/bGielinor/Gielinor-Develop
 | gielinor.minigames.castle_wars.rockfall.<[team]>.<[axis]>.fallen    | Server | Boolean            | Returns `true` if the rockfall at this location has fallen |
 | gielinor.minigames.castle_wars.rockfall.<[team]>.<[axis]>.health    | Server | ElementTag         | Returns the health of the rockfall at this location |
 | gielinor.play_effects.castle_wars.hub                               | Server | Boolean            | Returns `true` if players are within proximity to activate portal particle effects for the castle wars hub |
+| gielinor.statistics.minigames.castle_wars.red.won_games             | Server | ElementTag         | Returns the amount of games the Red team has won in the Castle Wars minigame. |
+| gielinor.statistics.minigames.season.<[season]>.<[team]>            | Server | ElementTag         | Returns the amount of games the `<[team]>` has won this `<[season]>`, where season is a `year_season` format, eg: `2020_summer` |
+| gielinor.statistics.minigames.castle_wars.won_games                 | Player | ElementTag         | Returns the amount of games the player has won in the Castle Wars minigame. |
+| gielinor.statistics.minigames.castle_wars.lost_games                | Player | ElementTag         | Returns the amount of games the player has lost in the Castle Wars minigame. |
+| gielinor.statistics.minigames.castle_wars.games_played              | Player | ElementTag         | Returns the amount of games the player has played in the Castle Wars minigame. |
