@@ -96,6 +96,7 @@ Yaml files can be found [`[here]`](https://github.com/bGielinor/Gielinor-Develop
 | gielinor.message_rate_limit.castle_wars_respawn_door                | Player | Boolean            | Ratelimit for message sent when attempting to use the respawn room doors too quickly |
 | gielinor.message_rate_limit.castle_wars_barricade_in_respawn        | Player | Boolean            | Ratelimit for message sent when attempting to place a barricade in the respawn room |
 | gielinor.message_rate_limit.castle_wars_maximum_barricades_set      | Player | Boolean            | Ratelimit for message sent when attempting to place more barricades than the team's allowed barricades |
+| gielinor.message_rate_limit.castle_wars_queue_room_teleport         | Player | Boolean            | Ratelimit for message sent when attempting to teleport into the queue room illegally |
 | gielinor.minigames.castle_wars.in_queue                             | Server | Boolean            | Returns `true` if Castle Wars has an active queue in process |
 | gielinor.minigames.castle_wars.in_queue                             | Player | Boolean            | Returns `true` if the player is in the castle wars queue |
 | gielinor.minigames.castle_wars.death_screen                         | Player | Boolean            | Returns `true` if the player has died and is on the death screen |
